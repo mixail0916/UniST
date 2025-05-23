@@ -1,11 +1,5 @@
 # UniST
 
-A pytorch implementation for the paper: [**UniST: A Prompt-Empowered Universal Model for Urban Spatio-Temporal Prediction**](https://arxiv.org/abs/2402.11838).
-
-[Yuan Yuan](https://scholar.google.com/citations?user=1AaWLJ8AAAAJ), [Jingtao Ding](https://scholar.google.com/citations?user=_TAJECAAAAAJ), [Jie Feng](https://scholar.google.com/citations?user=uvLx-GAAAAAJ), [Depeng Jin](), [Yong Li](https://scholar.google.com/citations?user=kmgzPeQAAAAJ)
-
-**[FIBLAB](https://fi.ee.tsinghua.edu.cn/)@[Tsinghua University](https://www.tsinghua.edu.cn/)**
-
 -----
 
 The repo currently includes code implementations for the following tasks:
@@ -19,27 +13,17 @@ The repo currently includes code implementations for the following tasks:
 > **Zero-shot Prediction**: UniST is demonstrated to generalize well on unseen spatio-temporal scenarios, making it a nice alternative as the fundamental backbone of the foundation spatio-temporal model.
 
 
-## 🎉 Updates
-📢: **News** (2024.12) We are delighted to release [UrbanDiT](https://arxiv.org/abs/2411.12164),  the ultimate spatio-temporal universal model trained from scratch. Compared to UniFlow and UniST, UrbanDiT offers greater universality, tackling **multiple tasks** while seamlessly supporting **diverse data types and formats across various scenarios**.
-
-📢: **News** (2024.10) We are excited to introduce our [UniFlow](https://arxiv.org/abs/2411.12972) paper ([Github](https://github.com/YuanYuan98/UniFlow)), a significant enhancement to our UniST framework! It seamlessly handles both **grid-based** data and **graph-based** data simultaneously, unlocking greater universalty. 
-
-📢: **News** (2024.06) Introduction of our work in [量子位](https://mp.weixin.qq.com/s/4rxmEx-8cYfgWHX6ct9gag), [时空探索之旅](https://mp.weixin.qq.com/s/KoARxX0ko1nPHJbsAh5HQw), [时序人](https://mp.weixin.qq.com/s/SxoYTCFa5JIuiBaBDVDecA) are available.
-
-📢: **News** (2024.05) UniST has been accepted to **KDD 2024**.
-
 
 
 ## Introduction
 🏆 By capturing the  underlying commonalities across multiple spatio-temporal scenarios, UniST breaks the  conventional practice that train separate models for different datasets, and has demonstrated superior performance and powerful generalization capability across diverse urban scenarios.
-![UniST](./assets/figure1.jpg "")
+
 
 ## Overall Architecture
 🌟 The training of UniST consists of two stages: (i) large-scale spatio-temporal pre-training, and (ii) spatio-temporal knowledge-guided prompt tuning. 
-![OverallArchi](./assets/model_all.jpg "")
 
 The pseudo-code of UniST is as simple as the following:
-![Alg](./assets/alg.jpg "")
+
 
 ## ⚖ Foundation models for spatio-temporal prediction
 
@@ -129,28 +113,5 @@ The evaluation results of the testing set can be obtained from `./experiments/Pr
 ## Model Weights
 We provide downloads of model weights on xxx. Coming soon.
 
-## 👀 Citation
 
-If you find this repo helpful, please cite our paper. 
-
-```latex
-@article{yuan2024unist,
-  title={UniST: A Prompt-Empowered Universal Model for Urban Spatio-Temporal Prediction},
-  author={Yuan, Yuan and Ding, Jingtao and Feng, Jie and Jin, Depeng and Li, Yong},
-  journal={arXiv preprint arXiv:2402.11838},
-  year={2024}
-}
 ```
-
-## 🙇‍ Acknowledgement
-We appreciate the following GitHub repos a lot for their valuable code and efforts.
-- Spatio-temporal prediction benchmark: [https://github.com/chengtan9907/OpenSTL](https://github.com/chengtan9907/OpenSTL)
-- Spatio-temporal data: [https://github.com/aptx1231/NYC-Dataset](https://github.com/aptx1231/NYC-Dataset)
-- MAE: [https://github.com/facebookresearch/mae](https://github.com/facebookresearch/mae)
-- PatchTST: [https://github.com/PatchTST/PatchTST](https://github.com/PatchTST/PatchTST)
-- iTransformer: [https://github.com/thuml/iTransformer](https://github.com/thuml/iTransformer)
-
-## 📧 Contact
-
-If you have any questions or want to use the code, feel free to contact:
-* Yuan Yuan (y-yuan20@mails.tsinghua.edu.cn)
